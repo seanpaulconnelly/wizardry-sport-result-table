@@ -5,6 +5,10 @@
 <link rel="stylesheet" href="assets/rsportz-style.css" type="text/css">
 
 <style>
+h2 {
+	margin-top:25px;
+}
+
 
 @media all and (max-width: 1024px){
   .latest-results .team {
@@ -21,105 +25,382 @@
 
 <body>
 <div class="container">
-	<div class="grid">
-		<div class="grid__item two-thirds">
-			<div class="card secondary-light-background normal-bottom">
-				<div class="card-body">two thirds</div>
-			</div>
-		</div>
-		<div class="grid__item one-third">
-			<div class="card secondary-light-background normal-bottom">
-				<div class="card-body">one third</div>
-			</div>
+
+<h2>Full width example</h2>
+<div class="grid">
+	<div class="grid__item one-whole">
+	<table class="striped responsive latest-results">
+	  <thead>
+	    <tr>
+	      <th>Date & Time</th>
+	      <th class="centered">Matchup</th>
+	      <th class="text-right">Score</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <td>
+		      <strong>24 Aug, 2014</strong><span class="palm--hide lap--hide"><br/></span>
+		      <small>12:00pm</small>
+	      </td>
+	      <td>
+	      	<div class="grid">
+	      		
+	      		<!-- Team 1; palm, lap, desk -->
+	      		<div class="team grid__item one-third palm--four-fifths lap--four-fifths palm--text-left lap--text-left centered">
+	      			<img src="http://placekitten.com/g/50/50"/><span class="palm--hide lap--hide"><br/></span><small>team_name</small>
+	      		</div>
+	      		<!-- Team 1 score; pallm & lap -->
+	      		<div class="grid__item one-fifth text-right desk--hide">
+	      			<strong>1</strong>
+	      		</div>
+
+	      		<!-- VS. text; only shows on desk -->
+	      		<div class="grid__item one-third centered lap--hide palm--hide">
+	      			<p><strong>VS</strong></p>
+	      		</div>
+
+	      		<!-- Team 2; palm, lap, desk -->
+	      		<div class="team grid__item one-third palm--four-fifths lap--four-fifths palm--text-left lap--text-left centered">
+	      			<img src="http://placekitten.com/g/50/50"/><span class="palm--hide lap--hide"><br/></span><small>team_name</small>
+	      		</div>
+	      		<!-- Team 2 score; palm & lap -->
+	      		<div class="grid__item one-fifth text-right desk--hide">
+	      			<strong>2</strong>
+	      		</div>
+	      	</div>
+	      </td>
+	      
+	      <!-- This score only shows on desk; palm and lap versions are above -->
+	      <td class="palm--hide lap--hide text-right"><strong>1 - 2</strong></td>
+	    </tr>
+	    <tr>
+	      <td>
+		      <strong>24 Aug, 2014</strong><span class="palm--hide lap--hide"><br/></span>
+		      <small>12:00pm</small>
+	      </td>
+	      <td>
+	      	<div class="grid">
+	      		
+	      		<!-- Team 1; palm, lap, desk -->
+	      		<div class="team grid__item one-third palm--four-fifths lap--four-fifths palm--text-left lap--text-left centered">
+	      			<img src="http://placekitten.com/g/50/50"/><span class="palm--hide lap--hide"><br/></span><small>team_name</small>
+	      		</div>
+	      		<!-- Team 1 score; pallm & lap -->
+	      		<div class="grid__item one-fifth text-right desk--hide">
+	      			<strong>1</strong>
+	      		</div>
+
+	      		<!-- VS. text; only shows on desk -->
+	      		<div class="grid__item one-third centered lap--hide palm--hide">
+	      			<p><strong>VS</strong></p>
+	      		</div>
+
+	      		<!-- Team 2; palm, lap, desk -->
+	      		<div class="team grid__item one-third palm--four-fifths lap--four-fifths palm--text-left lap--text-left centered">
+	      			<img src="http://placekitten.com/g/50/50"/><span class="palm--hide lap--hide"><br/></span><small>team_name</small>
+	      		</div>
+	      		<!-- Team 2 score; palm & lap -->
+	      		<div class="grid__item one-fifth text-right desk--hide">
+	      			<strong>2</strong>
+	      		</div>
+	      	</div>
+	      </td>
+	      
+	      <!-- This score only shows on desk; palm and lap versions are above -->
+	      <td class="palm--hide lap--hide text-right"><strong>1 - 2</strong></td>
+	    </tr>
+	  </tbody>
+	</table>
+	</div>
+</div>
+
+
+
+<h2>Two thirds example</h2>
+<div class="grid">
+	<div class="grid__item two-thirds palm--one-whole lap--one-whole">
+	<table class="striped responsive latest-results">
+	  <thead>
+	    <tr>
+	      <th>Date & Time</th>
+	      <th class="centered">Matchup</th>
+	      <th class="text-right">Score</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <td>
+		      <strong>24 Aug, 2014</strong><span class="palm--hide lap--hide"><br/></span>
+		      <small>12:00pm</small>
+	      </td>
+	      <td>
+	      	<div class="grid">
+	      		
+	      		<!-- Team 1; palm, lap, desk -->
+	      		<div class="team grid__item one-third palm--four-fifths lap--four-fifths palm--text-left lap--text-left centered">
+	      			<img src="http://placekitten.com/g/50/50"/><span class="palm--hide lap--hide"><br/></span><small>team_name</small>
+	      		</div>
+	      		<!-- Team 1 score; pallm & lap -->
+	      		<div class="grid__item one-fifth text-right desk--hide">
+	      			<strong>1</strong>
+	      		</div>
+
+	      		<!-- VS. text; only shows on desk -->
+	      		<div class="grid__item one-third centered lap--hide palm--hide">
+	      			<p><strong>VS</strong></p>
+	      		</div>
+
+	      		<!-- Team 2; palm, lap, desk -->
+	      		<div class="team grid__item one-third palm--four-fifths lap--four-fifths palm--text-left lap--text-left centered">
+	      			<img src="http://placekitten.com/g/50/50"/><span class="palm--hide lap--hide"><br/></span><small>team_name</small>
+	      		</div>
+	      		<!-- Team 2 score; palm & lap -->
+	      		<div class="grid__item one-fifth text-right desk--hide">
+	      			<strong>2</strong>
+	      		</div>
+	      	</div>
+	      </td>
+	      
+	      <!-- This score only shows on desk; palm and lap versions are above -->
+	      <td class="palm--hide lap--hide text-right"><strong>1 - 2</strong></td>
+	    </tr>
+	    <tr>
+	      <td>
+		      <strong>24 Aug, 2014</strong><span class="palm--hide lap--hide"><br/></span>
+		      <small>12:00pm</small>
+	      </td>
+	      <td>
+	      	<div class="grid">
+	      		
+	      		<!-- Team 1; palm, lap, desk -->
+	      		<div class="team grid__item one-third palm--four-fifths lap--four-fifths palm--text-left lap--text-left centered">
+	      			<img src="http://placekitten.com/g/50/50"/><span class="palm--hide lap--hide"><br/></span><small>team_name</small>
+	      		</div>
+	      		<!-- Team 1 score; pallm & lap -->
+	      		<div class="grid__item one-fifth text-right desk--hide">
+	      			<strong>1</strong>
+	      		</div>
+
+	      		<!-- VS. text; only shows on desk -->
+	      		<div class="grid__item one-third centered lap--hide palm--hide">
+	      			<p><strong>VS</strong></p>
+	      		</div>
+
+	      		<!-- Team 2; palm, lap, desk -->
+	      		<div class="team grid__item one-third palm--four-fifths lap--four-fifths palm--text-left lap--text-left centered">
+	      			<img src="http://placekitten.com/g/50/50"/><span class="palm--hide lap--hide"><br/></span><small>team_name</small>
+	      		</div>
+	      		<!-- Team 2 score; palm & lap -->
+	      		<div class="grid__item one-fifth text-right desk--hide">
+	      			<strong>2</strong>
+	      		</div>
+	      	</div>
+	      </td>
+	      
+	      <!-- This score only shows on desk; palm and lap versions are above -->
+	      <td class="palm--hide lap--hide text-right"><strong>1 - 2</strong></td>
+	    </tr>
+	  </tbody>
+	</table>
+	</div>
+	<div class="grid__item one-third lap--hide palm--hide">
+		<div class="card secondary-light-background normal-bottom">
+			<div class="card-body">one third</div>
 		</div>
 	</div>
-
-<div class="grid">
-<div class="grid__item two-thirds">
-<table class="striped responsive latest-results">
-  <thead>
-    <tr>
-      <th>Date & Time</th>
-      <th class="centered">Matchup</th>
-      <th class="text-right">Score</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-	      <strong>24 Aug, 2014</strong><span class="palm--hide lap--hide"><br/></span>
-	      <small>12:00pm</small>
-      </td>
-      <td>
-      	<div class="grid">
-      		
-      		<!-- Team 1; palm, lap, desk -->
-      		<div class="team grid__item one-third palm--four-fifths lap--four-fifths palm--text-left lap--text-left centered">
-      			<img src="http://placekitten.com/g/50/50"/><span class="palm--hide lap--hide"><br/></span><small>team_name</small>
-      		</div>
-      		<!-- Team 1 score; pallm & lap -->
-      		<div class="grid__item one-fifth text-right desk--hide">
-      			<strong>1</strong>
-      		</div>
-
-      		<!-- VS. text; only shows on desk -->
-      		<div class="grid__item one-third centered lap--hide palm--hide">
-      			<p><strong>VS</strong></p>
-      		</div>
-
-      		<!-- Team 2; palm, lap, desk -->
-      		<div class="team grid__item one-third palm--four-fifths lap--four-fifths palm--text-left lap--text-left centered">
-      			<img src="http://placekitten.com/g/50/50"/><span class="palm--hide lap--hide"><br/></span><small>team_name</small>
-      		</div>
-      		<!-- Team 2 score; palm & lap -->
-      		<div class="grid__item one-fifth text-right desk--hide">
-      			<strong>2</strong>
-      		</div>
-      	</div>
-      </td>
-      
-      <!-- This score only shows on desk; palm and lap versions are above -->
-      <td class="palm--hide lap--hide text-right"><strong>1 - 2</strong></td>
-    </tr>
-    <tr>
-      <td>
-	      <strong>24 Aug, 2014</strong><span class="palm--hide lap--hide"><br/></span>
-	      <small>12:00pm</small>
-      </td>
-      <td>
-      	<div class="grid">
-      		
-      		<!-- Team 1; palm, lap, desk -->
-      		<div class="team grid__item one-third palm--four-fifths lap--four-fifths palm--text-left lap--text-left centered">
-      			<img src="http://placekitten.com/g/50/50"/><span class="palm--hide lap--hide"><br/></span><small>team_name</small>
-      		</div>
-      		<!-- Team 1 score; pallm & lap -->
-      		<div class="grid__item one-fifth text-right desk--hide">
-      			<strong>1</strong>
-      		</div>
-
-      		<!-- VS. text; only shows on desk -->
-      		<div class="grid__item one-third centered lap--hide palm--hide">
-      			<p><strong>VS</strong></p>
-      		</div>
-
-      		<!-- Team 2; palm, lap, desk -->
-      		<div class="team grid__item one-third palm--four-fifths lap--four-fifths palm--text-left lap--text-left centered">
-      			<img src="http://placekitten.com/g/50/50"/><span class="palm--hide lap--hide"><br/></span><small>team_name</small>
-      		</div>
-      		<!-- Team 2 score; palm & lap -->
-      		<div class="grid__item one-fifth text-right desk--hide">
-      			<strong>2</strong>
-      		</div>
-      	</div>
-      </td>
-      
-      <!-- This score only shows on desk; palm and lap versions are above -->
-      <td class="palm--hide lap--hide text-right"><strong>1 - 2</strong></td>
-    </tr>
-  </tbody>
-</table>
 </div>
+
+
+
+<h2>One half example</h2>
+<div class="grid">
+	<div class="grid__item one-half palm--one-whole lap--one-whole">
+	<table class="striped responsive latest-results">
+	  <thead>
+	    <tr>
+	      <th>Date & Time</th>
+	      <th class="centered">Matchup</th>
+	      <th class="text-right">Score</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <td>
+		      <strong>24 Aug, 2014</strong><span class="palm--hide lap--hide"><br/></span>
+		      <small>12:00pm</small>
+	      </td>
+	      <td>
+	      	<div class="grid">
+	      		
+	      		<!-- Team 1; palm, lap, desk -->
+	      		<div class="team grid__item one-third palm--four-fifths lap--four-fifths palm--text-left lap--text-left centered">
+	      			<img src="http://placekitten.com/g/50/50"/><span class="palm--hide lap--hide"><br/></span><small>team_name</small>
+	      		</div>
+	      		<!-- Team 1 score; pallm & lap -->
+	      		<div class="grid__item one-fifth text-right desk--hide">
+	      			<strong>1</strong>
+	      		</div>
+
+	      		<!-- VS. text; only shows on desk -->
+	      		<div class="grid__item one-third centered lap--hide palm--hide">
+	      			<p><strong>VS</strong></p>
+	      		</div>
+
+	      		<!-- Team 2; palm, lap, desk -->
+	      		<div class="team grid__item one-third palm--four-fifths lap--four-fifths palm--text-left lap--text-left centered">
+	      			<img src="http://placekitten.com/g/50/50"/><span class="palm--hide lap--hide"><br/></span><small>team_name</small>
+	      		</div>
+	      		<!-- Team 2 score; palm & lap -->
+	      		<div class="grid__item one-fifth text-right desk--hide">
+	      			<strong>2</strong>
+	      		</div>
+	      	</div>
+	      </td>
+	      
+	      <!-- This score only shows on desk; palm and lap versions are above -->
+	      <td class="palm--hide lap--hide text-right"><strong>1 - 2</strong></td>
+	    </tr>
+	    <tr>
+	      <td>
+		      <strong>24 Aug, 2014</strong><span class="palm--hide lap--hide"><br/></span>
+		      <small>12:00pm</small>
+	      </td>
+	      <td>
+	      	<div class="grid">
+	      		
+	      		<!-- Team 1; palm, lap, desk -->
+	      		<div class="team grid__item one-third palm--four-fifths lap--four-fifths palm--text-left lap--text-left centered">
+	      			<img src="http://placekitten.com/g/50/50"/><span class="palm--hide lap--hide"><br/></span><small>team_name</small>
+	      		</div>
+	      		<!-- Team 1 score; pallm & lap -->
+	      		<div class="grid__item one-fifth text-right desk--hide">
+	      			<strong>1</strong>
+	      		</div>
+
+	      		<!-- VS. text; only shows on desk -->
+	      		<div class="grid__item one-third centered lap--hide palm--hide">
+	      			<p><strong>VS</strong></p>
+	      		</div>
+
+	      		<!-- Team 2; palm, lap, desk -->
+	      		<div class="team grid__item one-third palm--four-fifths lap--four-fifths palm--text-left lap--text-left centered">
+	      			<img src="http://placekitten.com/g/50/50"/><span class="palm--hide lap--hide"><br/></span><small>team_name</small>
+	      		</div>
+	      		<!-- Team 2 score; palm & lap -->
+	      		<div class="grid__item one-fifth text-right desk--hide">
+	      			<strong>2</strong>
+	      		</div>
+	      	</div>
+	      </td>
+	      
+	      <!-- This score only shows on desk; palm and lap versions are above -->
+	      <td class="palm--hide lap--hide text-right"><strong>1 - 2</strong></td>
+	    </tr>
+	  </tbody>
+	</table>
+	</div>
+	<div class="grid__item one-half lap--hide palm--hide">
+		<div class="card secondary-light-background normal-bottom">
+			<div class="card-body">one half</div>
+		</div>
+	</div>
+</div>
+
+
+
+<h2>One third example</h2>
+<div class="grid">
+	<div class="grid__item one-third palm--one-whole lap--one-whole">
+	<table class="striped responsive latest-results">
+	  <thead>
+	    <tr>
+	      <th>Date & Time</th>
+	      <th class="centered">Matchup</th>
+	      <th class="text-right">Score</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <td>
+		      <strong>24 Aug, 2014</strong><span class="palm--hide lap--hide"><br/></span>
+		      <small>12:00pm</small>
+	      </td>
+	      <td>
+	      	<div class="grid">
+	      		
+	      		<!-- Team 1; palm, lap, desk -->
+	      		<div class="team grid__item one-third palm--four-fifths lap--four-fifths palm--text-left lap--text-left centered">
+	      			<img src="http://placekitten.com/g/50/50"/><span class="palm--hide lap--hide"><br/></span><small>team_name</small>
+	      		</div>
+	      		<!-- Team 1 score; pallm & lap -->
+	      		<div class="grid__item one-fifth text-right desk--hide">
+	      			<strong>1</strong>
+	      		</div>
+
+	      		<!-- VS. text; only shows on desk -->
+	      		<div class="grid__item one-third centered lap--hide palm--hide">
+	      			<p><strong>VS</strong></p>
+	      		</div>
+
+	      		<!-- Team 2; palm, lap, desk -->
+	      		<div class="team grid__item one-third palm--four-fifths lap--four-fifths palm--text-left lap--text-left centered">
+	      			<img src="http://placekitten.com/g/50/50"/><span class="palm--hide lap--hide"><br/></span><small>team_name</small>
+	      		</div>
+	      		<!-- Team 2 score; palm & lap -->
+	      		<div class="grid__item one-fifth text-right desk--hide">
+	      			<strong>2</strong>
+	      		</div>
+	      	</div>
+	      </td>
+	      
+	      <!-- This score only shows on desk; palm and lap versions are above -->
+	      <td class="palm--hide lap--hide text-right"><strong>1 - 2</strong></td>
+	    </tr>
+	    <tr>
+	      <td>
+		      <strong>24 Aug, 2014</strong><span class="palm--hide lap--hide"><br/></span>
+		      <small>12:00pm</small>
+	      </td>
+	      <td>
+	      	<div class="grid">
+	      		
+	      		<!-- Team 1; palm, lap, desk -->
+	      		<div class="team grid__item one-third palm--four-fifths lap--four-fifths palm--text-left lap--text-left centered">
+	      			<img src="http://placekitten.com/g/50/50"/><span class="palm--hide lap--hide"><br/></span><small>team_name</small>
+	      		</div>
+	      		<!-- Team 1 score; pallm & lap -->
+	      		<div class="grid__item one-fifth text-right desk--hide">
+	      			<strong>1</strong>
+	      		</div>
+
+	      		<!-- VS. text; only shows on desk -->
+	      		<div class="grid__item one-third centered lap--hide palm--hide">
+	      			<p><strong>VS</strong></p>
+	      		</div>
+
+	      		<!-- Team 2; palm, lap, desk -->
+	      		<div class="team grid__item one-third palm--four-fifths lap--four-fifths palm--text-left lap--text-left centered">
+	      			<img src="http://placekitten.com/g/50/50"/><span class="palm--hide lap--hide"><br/></span><small>team_name</small>
+	      		</div>
+	      		<!-- Team 2 score; palm & lap -->
+	      		<div class="grid__item one-fifth text-right desk--hide">
+	      			<strong>2</strong>
+	      		</div>
+	      	</div>
+	      </td>
+	      
+	      <!-- This score only shows on desk; palm and lap versions are above -->
+	      <td class="palm--hide lap--hide text-right"><strong>1 - 2</strong></td>
+	    </tr>
+	  </tbody>
+	</table>
+	</div>
+	<div class="grid__item two-thirds lap--hide palm--hide">
+		<div class="card secondary-light-background normal-bottom">
+			<div class="card-body">two thirds</div>
+		</div>
+	</div>
 </div>
 
 </body>
