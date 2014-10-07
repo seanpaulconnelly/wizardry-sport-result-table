@@ -3,6 +3,20 @@
 <head>
 <title>Wizardry Sport Result Table</title>
 <link rel="stylesheet" href="assets/rsportz-style.css" type="text/css">
+
+<style>
+
+@media all and (max-width: 1024px){
+  .latest-results .team {
+    	padding-bottom:10px;
+  }
+  .latest-results .team img {
+  	width:30px;
+  	height:30px;
+  }
+}
+</style>
+
 </head>
 
 <body>
@@ -20,34 +34,93 @@
 		</div>
 	</div>
 
-
-<table>
+<div class="grid">
+<div class="grid__item two-thirds">
+<table class="striped responsive latest-results">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Phone</th>
-      <th>Email</th>
+      <th>Date & Time</th>
+      <th class="centered">Matchup</th>
+      <th class="text-right">Score</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Bob Builder</td>
-      <td>555-12345</td>
-      <td>bob@home.com</td>
+      <td>
+	      <strong>24 Aug, 2014</strong><span class="palm--hide lap--hide"><br/></span>
+	      <small>12:00pm</small>
+      </td>
+      <td>
+      	<div class="grid">
+      		
+      		<!-- Team 1; palm, lap, desk -->
+      		<div class="team grid__item one-third palm--four-fifths lap--four-fifths palm--text-left lap--text-left centered">
+      			<img src="http://placekitten.com/g/50/50"/><span class="palm--hide lap--hide"><br/></span><small>team_name</small>
+      		</div>
+      		<!-- Team 1 score; pallm & lap -->
+      		<div class="grid__item one-fifth text-right desk--hide">
+      			<strong>1</strong>
+      		</div>
+
+      		<!-- VS. text; only shows on desk -->
+      		<div class="grid__item one-third centered lap--hide palm--hide">
+      			<p><strong>VS</strong></p>
+      		</div>
+
+      		<!-- Team 2; palm, lap, desk -->
+      		<div class="team grid__item one-third palm--four-fifths lap--four-fifths palm--text-left lap--text-left centered">
+      			<img src="http://placekitten.com/g/50/50"/><span class="palm--hide lap--hide"><br/></span><small>team_name</small>
+      		</div>
+      		<!-- Team 2 score; palm & lap -->
+      		<div class="grid__item one-fifth text-right desk--hide">
+      			<strong>2</strong>
+      		</div>
+      	</div>
+      </td>
+      
+      <!-- This score only shows on desk; palm and lap versions are above -->
+      <td class="palm--hide lap--hide text-right"><strong>1 - 2</strong></td>
     </tr>
     <tr>
-      <td>Bridget Jones</td>
-      <td>544-776655</td>
-      <td>bjones@mysite.com</td>
-    </tr>
-    <tr>
-      <td>Tom Cruise</td>
-      <td>555-99911</td>
-      <td>cruise1@crazy.com</td>
+      <td>
+	      <strong>24 Aug, 2014</strong><span class="palm--hide lap--hide"><br/></span>
+	      <small>12:00pm</small>
+      </td>
+      <td>
+      	<div class="grid">
+      		
+      		<!-- Team 1; palm, lap, desk -->
+      		<div class="team grid__item one-third palm--four-fifths lap--four-fifths palm--text-left lap--text-left centered">
+      			<img src="http://placekitten.com/g/50/50"/><span class="palm--hide lap--hide"><br/></span><small>team_name</small>
+      		</div>
+      		<!-- Team 1 score; pallm & lap -->
+      		<div class="grid__item one-fifth text-right desk--hide">
+      			<strong>1</strong>
+      		</div>
+
+      		<!-- VS. text; only shows on desk -->
+      		<div class="grid__item one-third centered lap--hide palm--hide">
+      			<p><strong>VS</strong></p>
+      		</div>
+
+      		<!-- Team 2; palm, lap, desk -->
+      		<div class="team grid__item one-third palm--four-fifths lap--four-fifths palm--text-left lap--text-left centered">
+      			<img src="http://placekitten.com/g/50/50"/><span class="palm--hide lap--hide"><br/></span><small>team_name</small>
+      		</div>
+      		<!-- Team 2 score; palm & lap -->
+      		<div class="grid__item one-fifth text-right desk--hide">
+      			<strong>2</strong>
+      		</div>
+      	</div>
+      </td>
+      
+      <!-- This score only shows on desk; palm and lap versions are above -->
+      <td class="palm--hide lap--hide text-right"><strong>1 - 2</strong></td>
     </tr>
   </tbody>
 </table>
-
+</div>
+</div>
 
 </body>
 </html>
